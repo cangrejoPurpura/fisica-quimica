@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="auto">
+  <defs>
+    <linearGradient id="cosmicBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06091e"/>
+      <stop offset="50%" stop-color="#0c133a"/>
+      <stop offset="100%" stop-color="#070a22"/>
+    </linearGradient>
+    <linearGradient id="cosmicPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111a4a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#090e2a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="neonBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="350" rx="16" fill="url(#cosmicBg)" stroke="url(#neonBorder)" stroke-width="2"/>
+  
+  <!-- Panel 1: Presión Hidrostática -->
+  <rect x="20" y="20" width="245" height="310" rx="12" fill="url(#cosmicPanel)" stroke="url(#neonBorder)" stroke-width="1.5"/>
+  <text x="142" y="45" fill="#38bdf8" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13.5" font-weight="bold" text-anchor="middle">1. Presión Hidrostática</text>
+  
+  <!-- Beaker with liquid -->
+  <rect x="65" y="65" width="110" height="140" rx="4" fill="#0284c7" fill-opacity="0.35" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="65" y1="85" x2="175" y2="85" stroke="#7dd3fc" stroke-width="2"/>
+  <!-- Depth arrow h -->
+  <line x1="195" y1="85" x2="195" y2="185" stroke="#facc15" stroke-width="2"/>
+  <text x="212" y="140" fill="#facc15" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13" font-weight="bold">h</text>
+  <!-- Pressure arrows increasing with depth -->
+  <line x1="85" y1="115" x2="110" y2="115" stroke="#38bdf8" stroke-width="2"/>
+  <line x1="85" y1="145" x2="128" y2="145" stroke="#38bdf8" stroke-width="2.5"/>
+  <line x1="85" y1="175" x2="150" y2="175" stroke="#38bdf8" stroke-width="3"/>
+  
+  <rect x="32" y="218" width="220" height="98" rx="8" fill="#070b24" stroke="#4f46e5" stroke-opacity="0.55"/>
+  <text x="142" y="240" fill="#f8fafc" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">P = F / S   |   P_hid = δ · g · h</text>
+  <text x="142" y="260" fill="#fde047" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" text-anchor="middle">1 atm = 760 mmHg = 101.325 Pa</text>
+  <text x="142" y="280" fill="#34d399" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" text-anchor="middle">P_manométrica = P_abs − P_atm</text>
+  <text x="142" y="298" fill="#cbd5e1" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="10.5" text-anchor="middle">De pie: P_pies &gt; P_corazón &gt; P_cabeza</text>
+
+  <!-- Panel 2: Principio de Pascal -->
+  <rect x="278" y="20" width="245" height="310" rx="12" fill="url(#cosmicPanel)" stroke="url(#neonBorder)" stroke-width="1.5"/>
+  <text x="400" y="45" fill="#facc15" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13.5" font-weight="bold" text-anchor="middle">2. Principio de Pascal</text>
+  
+  <!-- Hydraulic Press U-tube -->
+  <path d="M 315 95 L 315 195 L 485 195 L 485 95 L 435 95 L 435 165 L 350 165 L 350 95 Z" fill="#0284c7" fill-opacity="0.4" stroke="#38bdf8" stroke-width="2"/>
+  <rect x="317" y="90" width="31" height="14" fill="#f59e0b"/>
+  <rect x="437" y="90" width="46" height="14" fill="#10b981"/>
+  <text x="332" y="80" fill="#fde047" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">F₁ / S₁</text>
+  <text x="460" y="80" fill="#34d399" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">F₂ / S₂</text>
+  
+  <rect x="290" y="218" width="220" height="98" rx="8" fill="#070b24" stroke="#4f46e5" stroke-opacity="0.55"/>
+  <text x="400" y="242" fill="#fde047" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13" font-weight="bold" text-anchor="middle">P₁ = P₂  ⇒  F₁ / S₁ = F₂ / S₂</text>
+  <text x="400" y="265" fill="#cbd5e1" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" text-anchor="middle">La presión aplicada a un fluido</text>
+  <text x="400" y="282" fill="#cbd5e1" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" text-anchor="middle">incompresible encerrado se</text>
+  <text x="400" y="299" fill="#cbd5e1" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" text-anchor="middle">transmite igual en toda dirección.</text>
+
+  <!-- Panel 3: Principio de Arquímedes -->
+  <rect x="535" y="20" width="245" height="310" rx="12" fill="url(#cosmicPanel)" stroke="url(#neonBorder)" stroke-width="1.5"/>
+  <text x="657" y="45" fill="#34d399" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13.5" font-weight="bold" text-anchor="middle">3. Arquímedes (Hidroterapia)</text>
+  
+  <rect x="602" y="70" width="110" height="130" rx="6" fill="#0284c7" fill-opacity="0.35" stroke="#38bdf8" stroke-width="2"/>
+  <circle cx="657" cy="135" r="24" fill="#f43f5e" stroke="#fecdd3" stroke-width="2"/>
+  <!-- Weight down, Buoyancy up -->
+  <line x1="647" y1="135" x2="647" y2="182" stroke="#fca5a5" stroke-width="2.5"/>
+  <text x="630" y="175" fill="#fca5a5" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" font-weight="bold">P</text>
+  <line x1="667" y1="135" x2="667" y2="88" stroke="#34d399" stroke-width="2.5"/>
+  <text x="682" y="102" fill="#34d399" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" font-weight="bold">E</text>
+
+  <rect x="547" y="218" width="220" height="98" rx="8" fill="#070b24" stroke="#4f46e5" stroke-opacity="0.55"/>
+  <text x="657" y="240" fill="#34d399" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">E = δ_fluido · V_desalojado · g</text>
+  <text x="657" y="260" fill="#f8fafc" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">P_aparente = P_real − Empuje (E)</text>
+  <text x="657" y="280" fill="#cbd5e1" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="10.5" text-anchor="middle">E &gt; P: flota | E = P: a dos aguas</text>
+  <text x="657" y="298" fill="#fde047" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="10.5" text-anchor="middle">Facilita rehabilitación kinesiológica</text>
+
+  <!-- Animated Hydrostatic Depth Waves, Pascal Pistons & Archimedes Buoyancy -->
+  <circle r="4.5" fill="#22d3ee" filter="url(#neonGlow)">
+    <animateMotion dur="2.2s" repeatCount="indefinite" path="M 332 105 L 332 180 L 460 180 L 460 105" />
+  </circle>
+  <circle cx="657" cy="135" r="24" fill="none" stroke="#34d399" stroke-width="2">
+    <animate attributeName="cy" values="138;130;138" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="100%" height="auto">
+  <defs>
+    <linearGradient id="cosmicBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06091e"/>
+      <stop offset="50%" stop-color="#0c133a"/>
+      <stop offset="100%" stop-color="#070a22"/>
+    </linearGradient>
+    <linearGradient id="cosmicPanel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111a4a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#090e2a" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="neonBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <defs>
+    <linearGradient id="phGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="25%" stop-color="#f97316"/>
+      <stop offset="45%" stop-color="#eab308"/>
+      <stop offset="50%" stop-color="#22c55e"/>
+      <stop offset="70%" stop-color="#06b6d4"/>
+      <stop offset="85%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="350" rx="16" fill="url(#cosmicBg)" stroke="url(#neonBorder)" stroke-width="2"/>
+  
+  <!-- Escala de pH -->
+  <text x="400" y="38" fill="#f8fafc" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Escala de pH, pOH y Fluidos Biológicos (pH + pOH = 14)</text>
+  <rect x="40" y="55" width="720" height="34" rx="8" fill="url(#phGrad)" stroke="#cbd5e1" stroke-width="1.5"/>
+  
+  <!-- Numbers 0 to 14 -->
+  <text x="50" y="77" fill="#ffffff" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13" font-weight="bold">0</text>
+  <text x="150" y="77" fill="#ffffff" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13" font-weight="bold">2</text>
+  <text x="250" y="77" fill="#0f172a" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13" font-weight="bold">4</text>
+  <text x="350" y="77" fill="#0f172a" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13" font-weight="bold">6</text>
+  <text x="400" y="77" fill="#ffffff" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">7 (Neutro)</text>
+  <text x="470" y="77" fill="#ffffff" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13" font-weight="bold">8</text>
+  <text x="560" y="77" fill="#ffffff" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13" font-weight="bold">10</text>
+  <text x="655" y="77" fill="#ffffff" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13" font-weight="bold">12</text>
+  <text x="742" y="77" fill="#ffffff" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="13" font-weight="bold">14</text>
+  
+  <!-- Biological Fluids Markers -->
+  <text x="135" y="112" fill="#fca5a5" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Jugo Gástrico (1,5–2)</text>
+  <text x="310" y="112" fill="#fde047" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Orina (&gt;5,5)</text>
+  <text x="400" y="130" fill="#86efac" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Lágrimas (7,0) · Saliva (6,5–7,4)</text>
+  <text x="445" y="112" fill="#38bdf8" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Sangre (7,35–7,45)</text>
+  <text x="530" y="130" fill="#c4b5fd" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Jugo Pancreático (8) · Bilis (8,5)</text>
+
+  <!-- Bottom Panels: Ácidos/Bases + Buffer Bicarbonato -->
+  <rect x="30" y="150" width="355" height="175" rx="12" fill="url(#cosmicPanel)" stroke="url(#neonBorder)" stroke-width="1.5"/>
+  <text x="207" y="175" fill="#38bdf8" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Ácidos, Bases y Autoprotólisis del Agua</text>
+  <text x="45" y="200" fill="#e2e8f0" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="12">• <tspan fill="#fca5a5" font-weight="bold">Ácido (Arrhenius):</tspan> libera H⁺ / H₃O⁺ (Brønsted: cede H⁺)</text>
+  <text x="45" y="222" fill="#e2e8f0" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="12">• <tspan fill="#93c5fd" font-weight="bold">Base (Arrhenius):</tspan> libera OH⁻ (Brønsted: acepta H⁺)</text>
+  <text x="45" y="244" fill="#e2e8f0" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="12">• <tspan fill="#fde047" font-weight="bold">Fuerte:</tspan> disociación total (→) | <tspan fill="#fde047" font-weight="bold">Débil:</tspan> parcial (⇌)</text>
+  <text x="45" y="268" fill="#34d399" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="12" font-weight="bold">Kw = [H⁺] · [OH⁻] = 1 × 10⁻¹⁴ M² (en neutro: 10⁻⁷ M)</text>
+  <text x="45" y="292" fill="#f8fafc" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="12" font-weight="bold">pH = −log[H⁺]   |   pOH = −log[OH⁻]</text>
+  <text x="45" y="312" fill="#94a3b8" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11">Neutralización: Ácido + Base → Sal + Agua (H₂O)</text>
+
+  <rect x="405" y="150" width="365" height="175" rx="12" fill="url(#cosmicPanel)" stroke="url(#neonBorder)" stroke-width="1.5"/>
+  <text x="587" y="175" fill="#34d399" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Buffer Bicarbonato en Sangre (pH 7,35 – 7,45)</text>
+  <rect x="420" y="190" width="335" height="36" rx="6" fill="#0f172a" stroke="#38bdf8"/>
+  <text x="587" y="213" fill="#fde047" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="12.5" font-weight="bold" text-anchor="middle">CO₂ + H₂O  ⇌  H₂CO₃  ⇌  HCO₃⁻ + H⁺</text>
+  <text x="420" y="248" fill="#fca5a5" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11.5">• <tspan font-weight="bold">Acidosis (&lt; 7,35):</tspan> exceso de H⁺ o CO₂ (hipoventilación).</text>
+  <text x="420" y="266" fill="#93c5fd" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11.5">• <tspan font-weight="bold">Alcalosis (&gt; 7,45):</tspan> falta de H⁺ o CO₂ (hiperventilación).</text>
+  <text x="420" y="288" fill="#e2e8f0" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11.5">• <tspan fill="#34d399" font-weight="bold">Órganos reguladores:</tspan> Pulmones (eliminan CO₂ rápido) y</text>
+  <text x="430" y="306" fill="#e2e8f0" font-family="Space Grotesk, Plus Jakarta Sans, sans-serif" font-size="11.5">Riñones (excretan H⁺ y reabsorben HCO₃⁻ en orina).</text>
+
+  <!-- Animated pH Blood Homeostasis Marker & Buffer Equilibrium Pulse -->
+  <circle cx="445" cy="72" r="9" fill="none" stroke="#22d3ee" stroke-width="2.5" filter="url(#neonGlow)">
+    <animate attributeName="r" values="7;13;7" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="4.5" fill="#34d399" filter="url(#neonGlow)">
+    <animateMotion dur="2.8s" repeatCount="indefinite" path="M 450 208 L 720 208 L 450 208" />
+  </circle>
+
+</svg>
